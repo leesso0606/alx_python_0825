@@ -1,13 +1,13 @@
-a=9
-b=2
-print(a/b) #나누기4.5
-print(a//b) #몫 4 
-print(a%b) #나머지 1
+# a=9
+# b=2
+# print(a/b) #나누기4.5
+# print(a//b) #몫 4 
+# print(a%b) #나머지 1
 
-#a=5
-# 짝수인가?홀수인지?
-a=int(input("숫자를 입력하시오"))
-print(5%2==0)  #참(True), 진실(False)로 알수 있음.
+# #a=5
+# # 짝수인가?홀수인지?
+# a=int(input("숫자를 입력하시오"))
+# print(5%2==0)  #참(True), 진실(False)로 알수 있음.
 
 
 #print (100**10)
