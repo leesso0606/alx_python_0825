@@ -1,6 +1,6 @@
 a=9
 b=2
-print(a/b) 
+print(a/b) #나누기4.5
 print(a//b) #몫 4 
 print(a%b) #나머지 1
 

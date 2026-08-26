@@ -1,47 +1,73 @@
-# 번호, 이름, 국어,영어,수학을 입력받아
-# 번호, 이름, 국어,영어,수학,합계,평균을 출력하시오.
-# 1 홍길동 100 100 100 300 100.0
-no=input("번호를 입력하시오.")
-name=input("이름을 입력하시오.")
-kro=int(input("국어점수입력"))
-eng=int(input("영어점수입력"))
-math=int(input("수학점수입력"))
-total=kro+eng+math
-avg=total/3
-print("-"*60)
-print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
-print("-"*60)
-print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".format(no,name,kro,eng,math,total,avg))
-print("-"*60)
+# 원의 반지름을 입력받아
+# 원의 넓이를 출력하시오.
+elngth = int(input("반지름을 입력하세요."))
+pi = 3.14
+# 파이(3.14)*반지름*반지름 == pi*elngth**2
+result = pi*(elngth**2)
+
+print("원의 넓이:{}".format(result))
+print("원의 넓이:{}cm2".format(pi*elngth*elngth))
+print("원의 넓이:{}cm2".format(pi*elngth**2))
+
+# 2*pi*elngth
+result2 = 2*pi*elngth
+# 원의 둘레 : cm
+print("원의 둘레:{:.2f}".format(result2))
+print("원의 둘레:{}cm".format(2*pi*elngth))
+
+
+
+
+
+
+
+# a=10
+# a=a+2 #a+=2와 동일할 표시
+# print(a) #12
+
+
+# print("101"+"102") #101102
+# print("안녕"+"하세요") #안녕하세요
+
+
+
+# # 번호, 이름, 국어,영어,수학을 입력받아
+# # 번호, 이름, 국어,영어,수학,합계,평균을 출력하시오.
+
+# # 1 홍길동 100 100 100 300 100.0
+# no=input("번호를 입력하시오.")
+# name=input("이름을 입력하시오.")
+# kor=int(input("국어점수입력"))
+# eng=int(input("영어점수입력"))
+# math=int(input("수학점수입력"))
+# total=kor+eng+math
+# avg=total/3
+# print("-"*60)
+# print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
+# print("-"*60)
+# print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".\
+#       format(no,name,kor,eng,math,total,avg))
+# print("-"*60)
+
+# # print("번호{}\t이름{}\t국어{}\t영어{}\t수학{}\t합계{}\t평균{:.2f}".\
+# #       format(no,name,kor,eng,math,total,avg)) #실험
+
+
+# # 2번 유관순 100 100 91
+# no2=input("번호를 입력하시오.")
+# name2=input("이름을 입력하시오.")
+# kro2=int(input("국어점수입력"))
+# eng2=int(input("영어점수입력"))
+# math2=int(input("수학점수입력"))
+# total2=kro2+eng2+math2
+# avg2=total2/3
 
 # print("-"*60)
 # print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
 # print("-"*60)
 # print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".\
-#       format(no,name,kor,eng,math,total,avg))
+#       format(no2,name2,kro2,eng2,math2,total2,avg2))
 # print("-"*60)
-
-# 2번 유관순 100 100 91
-no2=input("번호를 입력하시오.")
-name2=input("이름을 입력하시오.")
-kro2=int(input("국어점수입력"))
-eng2=int(input("영어점수입력"))
-math2=int(input("수학점수입력"))
-total2=kro2+eng2+math2
-avg2=total2/3
-
-print("-"*60)
-print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
-print("-"*60)
-print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".format(no2,name2,kro2,eng2,math2,total2,avg2))
-print("-"*60)
-
-
-
-
-
-
-
 
 
 
