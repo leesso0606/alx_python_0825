@@ -1,18 +1,42 @@
-money = 12340
+#관계연산자 : ==,!,>,<,>=,<=
+#Ture, False bool 타입으로 반환.
+
+# 아이디와 패스워드를 입력받아 맞는지 확인할 것.
+# 아이디 : aaa, 패스워드:1111
+id = input("아이디를 입력하시오.>>")
+pw = input("패스워드를 입력하시오.>>")
+if (id=="aaa") and (pw=="1111"): # 둘다 맞을 경우 이동. 하나라도 틀리면 이동안함.
+    print("로그입이 되었습니다. 메인페이지로 이동합니다.")
+else:
+    print("아이디 또는 패스워드가 일치하지 않습니다.")
+
+
+# a= 10
+# b=5
+# print(a==b) #False
+# print(a!=b) #Ture
+# print(a>b) #Ture
+# print(a<b) #False
+
+
+
+# 산술연산자 : +,-,*,/,//,%,**
+
+# money = 12340
 # 12340 -> 500원 동전 몇개? 100원동전 몇개? 10원 동전 몇개?
 # 12340원 500원동전:?, 100원동전?, 10원:?
 
-result = money//500 #몫 24개
-num= money%500 #나머지 340
-result2 = num//100 # 몫 3
-num2 = num%100 #나머지 4
-result3 = num2//10 #몫 4
-num3 = num%10 #나머지 0
-print("500원:{}개, 100원{}개, 10원:{}개".format(result,result2,result3))
+# a1 = money//500 #몫 24개
+# num= money%500 #나머지 340
+# a2 = num//100 # 몫 3
+# num2 = num%100 #나머지 4
+# a3 = num2//10 #몫 4
+# num3 = num%10 #나머지 0
+# print("500원:{}개, 100원{}개, 10원:{}개".format(a1,a2,a3))
 
 
 
 # # 500원 동전 몇개가 필요할까요?
 # result = money//500
-# print("500원동전 필요 개수:".format(result))
-# print("500원동전 필요 개수:",(result))
+# print("500원동전 필요 개수:{}".format(result))
+# print("500원동전 필요 개수:{}",(result))
