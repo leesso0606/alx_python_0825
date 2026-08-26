@@ -16,11 +16,6 @@ print("원의 둘레:{:.2f}".format(result2))
 print("원의 둘레:{}cm".format(2*pi*elngth))
 
 
-
-
-
-
-
 # a=10
 # a=a+2 #a+=2와 동일할 표시
 # print(a) #12
