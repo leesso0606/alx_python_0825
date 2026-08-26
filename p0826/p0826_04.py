@@ -7,7 +7,7 @@ print(a%b) #나머지 1
 #a=5
 # 짝수인가?홀수인지?
 a=int(input("숫자를 입력하시오"))
-print(5%2==0)  #참, 진실로 알수 있음.
+print(5%2==0)  #참(True), 진실(False)로 알수 있음.
 
 
 #print (100**10)
@@ -16,7 +16,7 @@ print(5%2==0)  #참, 진실로 알수 있음.
 #2진수로 변경하는 명령어 bin()
 #print (bin(5)) #101
 #2진수를 10진수 출력하는 방법
-# print (int("101",2))
+#print (int("101",2))
 
 
 # #a,b = 1,2
@@ -28,6 +28,8 @@ print(5%2==0)  #참, 진실로 알수 있음.
 # # 에러, 한 줄에 2 조건이 있으면 에러.
 # # a=1, b=2
 # #print(a,b)
+
+
 
 # # 국어, 영어, 수학점수를 입력받아
 # # 합계, 평균을 출력하시오
@@ -59,8 +61,10 @@ print(5%2==0)  #참, 진실로 알수 있음.
 # print("잔액:{}".format(total1))
 # print("송금금액:{}".format(send))
 # print("총금액:{}".format(total1+send)) # 내가 한것
+
 # 한줄로 넣는거면 print("잔액:{}, 송금금액:{}, 총금액:::{}".format(total1, send, total2))
+
 # print("잔액 : ", total1)
 # print("송금 : ", send)
-# print("총금액 : ", total2)
+# print("총금액 : ", total2) # 으로도 가능하지만 .format 을 습관화 할것.
 
