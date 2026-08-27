@@ -3,6 +3,8 @@
 # 있으면 당첨, 없으면 꽝
 # 랜덤숫자 리스트 출력
 # 입력숫자 출력
+
+
 # import random
 # arr2 = random.sample(range(1,101),3)
 # arr2.sort() #순차정렬
@@ -25,7 +27,7 @@ num3=random.randint(1,100)
 arr=[num1,num2,num3]
 
 # # 2. 
-aaa=int(input("숫자를 입력하시오")) #변수로 만들어 후에 print할 것을 만듬.
+a1=int(input("숫자를 입력하시오")) #변수로 만들어 후에 print할 것을 만듬.
 # # 3.
 if arr in arr:
      print("당첨")
@@ -34,6 +36,6 @@ else:
 
 # 4.
 print("랜덤숫자:",arr)
-print("숫자:",aaa)
+print("숫자:",a1)
 
 
