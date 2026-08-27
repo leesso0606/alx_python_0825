@@ -1,9 +1,21 @@
-# 정렬 순차정렬: 리스트명.sort(), 역순정렬: 리스트명.sort(reverse=True)
-arr=[1,5,8,3,2] #리스트
-arr.sort()
-print(arr) #[1, 2, 3, 5, 8]
-arr.sort(reverse=TimeoutError)
-print(arr) # [8, 5, 3, 2, 1]
+# 원하는 값 in 리스트, 원하는 값 not-in리스트
+
+arr=[1,3,5,7,9]
+if 6 in arr:
+    print("원하는 수가 있습니다.")
+else:
+    print("원하는 수가 없습니다.")
+
+
+
+
+
+# # 정렬 순차정렬: 리스트명.sort(), 역순정렬: 리스트명.sort(reverse=True)
+# arr=[1,5,8,3,2] #리스트
+# arr.sort()
+# print(arr) #[1, 2, 3, 5, 8]
+# arr.sort(reverse=TimeoutError)
+# print(arr) # [8, 5, 3, 2, 1]
 
 
 
