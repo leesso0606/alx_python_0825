@@ -1,5 +1,5 @@
 str1="안녕" #문자열
-int=1 #숫자-정수형
+int1=1 #숫자-정수형
 float1=1.1 #숫자-실수형
 bool1=True #불형
 
@@ -7,10 +7,9 @@ bool1=True #불형
 arr=[str1,int,float,bool1,[1,2,3,"안녕"]]
 
 # 자료형확인 - type()
-str2="111"
-print(type(str2))
-print(type(int(str2)))#왜 에러가???
-# print(type(int(str2))) #문자열을 정수타입으로 변경
+str12="2222"
+print(type(str12))
+print(type(int(str12)))#문자열을 정수타입으로 변경
 # int()-정수타입변환, float()-실수, str()-문자열, bool()-불타입
 
 # 문자열 선언 - "",''
