@@ -1,5 +1,6 @@
 # 문자열함수
 # split, strip,replace,find,rfind
+# upper-영문자 모두 대문자로 출력, lower-영문자 모두 소문자로 출력.
 
 
 
@@ -51,3 +52,9 @@ bb="ancdefghicba"
 print(bb.find("f")) #5
 # rfind: 오른쪽에서 부터 검색 시작
 print(bb.rfind("c")) #9
+
+cc="aabbccdd"
+print(cc.upper()) #AABBCCDD
+
+dd="AABBCCDD"
+print(dd.lower()) #aabbccdd
