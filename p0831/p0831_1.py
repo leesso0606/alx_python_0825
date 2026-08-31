@@ -1,6 +1,8 @@
 
 # 반복문
 # fori in range(10),range(1,11),range(1,11,2)/ [1,2,3]/"안녕하세요"
+
+
 # 구구단 출력
 
 # for i in range(2,10):
@@ -15,10 +17,21 @@
 #     print()
 
 
+# for i in range(2,10):
+#     print("[{}단]".format(i),end="\t")
+
+#     for j in range(1,10):
+#         print("{}X{}={}".format(i,j,i*j),end="\t")
+#     print() #빠져나왔을 때 새로운 줄로 이동된것.
+
+# 구구단을 아래로 출력하시오.
 for i in range(2,10):
-    for j in range(1,10):
-        print("{}X{}={}".format(i,j,i*j),end="\t")
-    print() #빠져나왔을 때 새로운 줄로 이동된것.
+    print(f"[{i}단]",end="\t")
+print()
+for i in range(1,10):
+    for j in range(2,10):
+        print("{}x{}={}".format(j,i,i*j),end='\t')
+    print()
 
 
 
