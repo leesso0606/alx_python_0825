@@ -50,4 +50,4 @@ else:
 # # 500원 동전 몇개가 필요할까요?
 # result = money//500
 # print("500원동전 필요 개수:{}".format(result))
-# print("500원동전 필요 개수:{}",(result))
+# print("500원동전 필요 개수:",(result))

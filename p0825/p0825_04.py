@@ -21,7 +21,7 @@ print("{},{}".format(1,2,3,4,5))
 # print(a+b)
 # print(a-b)
 # print(a*b)
-# print(a/b)
+# print(a/b) #2.0
 # print(a//b) # 몫2
 # print(a%b) #나머지 0
 # print(a**b) #제곱100000
