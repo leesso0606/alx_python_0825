@@ -30,7 +30,7 @@ while True:
 
 
 print("정답:",answer)
-print("정답:",my_list[-1])
+print("정답:",my_list)
 print("my_list",my_list)
 print("프로그램 종료")
 

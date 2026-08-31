@@ -5,19 +5,29 @@
 
 
 # 입력한 숫자를 모두 저장해서 프로그램을 종료할 때 출력하시오
-
+noArr=[10,40,2,9,5]
 no=[]
+answer=[]
+count=0
 while True:
     i_no = int(input("숫자입력:"))
+    # 0을 입력할 때 반복문 종료
+    if i_no==0:break
     # 입력한 숫자 리스트에 저장
     no.append(i_no)
-    # 0을 입력할 때 반복문 종료
-    if i_no==0:
-        break
+
+# noArr와 개수가 같은 
+for i in no:
+    if i in noArr:
+        count = count+1
+        answer.append(i)
+    
 
 # 반복문 종료할 때 입력된 숫자 모두 출력
-
-print("프로그램 종료:",no)
+print("리스트:",noArr)
+print("입력 숫자:",no)
+print("정답숫자:",answer)
+print("프로그램 종료")
 
 
 
@@ -40,5 +50,4 @@ print("프로그램 종료:",no)
 #     else:
 #         print("없음")
 
-# print
 # print("개수:",count)
