@@ -34,20 +34,21 @@ for b in range(1,50):
 
 # # 여러명의 학생 성적을 출력할 때
 # # 리스트일때만 반복문을 쓸 수 있다.
-# name=[]
-# kor=[]
+name=[]
+kor=[]
 # for _ in range(2):
 #     name.append(input("이름:"))
 #     kor.append(int(input("국어점수:")))
 # # 리스트에 
-# # stu=[] 추가
-# # for _ in range(2):
-# #     name=input("이름:")
-# #     kor=int(input("국어점수:"))
-# #     stu.append([name,kor]) 으로 쓸수도 있다.
+stu=[] #추가
+for n in range(2):
+    name=input("이름:")
+    kor=int(input("국어점수:"))
+    stu.append([name,kor]) #으로 쓸수도 있다.
 
-# for _ in range(2):
-#     print("{}\t{}".format(name[_],kor[_]))
+# for n in range(2):
+for n in stu:
+    print("{}\t{}".format(n[0],n[1]))
 
 # # 변수가 일일이 지정되어 있으면 반복문 사용 불가능
 # # print("{}\t{}".format(name1,kor2))

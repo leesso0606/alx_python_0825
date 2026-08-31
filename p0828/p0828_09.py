@@ -43,7 +43,7 @@ for i in range(3):
     no=i+1
     name=input("이름 입력: ")
     kro=int(input("국어점수 : "))
-    stu.append([no,name,kor])
+    stu.append([no,name,kro])
 
 for i in range(3):
     print("{}번\t이름:{} \t{}점".format(no,name,kro))
