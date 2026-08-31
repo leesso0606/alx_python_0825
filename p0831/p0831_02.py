@@ -5,6 +5,18 @@
 # 유관순 100
 # 이순신 90을 출력하시오
 
+# name = []
+# kor = []
+# eng = []
+# for i in range(3):
+#     name.append(input("이름입력 :"))
+#     kor.append(int(input("국어점수입력 : ")))
+
+# print("[ 학생성적 ]")
+# for i in range(len(name)):
+#     print(f"{name[i]}\t{kor[i]}")
+
+#  영어, 수학, 합계, 평균을 추가할 경우
 name=[]
 kor=[]
 eng=[]
@@ -20,13 +32,15 @@ for i in range(3):
     m_input=int(input("수학점수:"))
     math.append(m_input)
     total.append(k_input+e_input+m_input)
-    avg.append(k_input+e_input+m_input/3)
+    avg.append((k_input+e_input+m_input)/3)
+
 print("[학생 성적]")
 print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
 print("-"*60)
+
 for i in range(len(name)):
-    print("{i+1}{}\t{}\t{}\t{}\t{}\t{:2f}".format([i+1],name[i],kor[i],eng[i],math[i],total[i],avg[i]))
-    # print(f"{name[i]}\t{kor[i]}\t{eng[i]}\t{math[i]}\ttotal[i]\tavg[i]")
+    print("{}\t{}\t{}\t{}\t{}\t{}\t{:2f}".format(i+1,name[i],kor[i],eng[i],math[i],total[i],avg[i]))
+    # print(f"{i+1}\t{name[i]}\t{kor[i]}\t{eng[i]}\t{math[i]}\t{total[i]}\t{avg[i]:2f}")
 
 
 
