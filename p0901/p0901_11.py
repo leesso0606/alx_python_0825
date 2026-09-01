@@ -140,5 +140,6 @@ print(name_sort1)
 # # 삭제
 # del(stu_list[0]['no'])
 # print(stu_list)
-
+# 특정값만 출력.
+# print(stu_list[0].get('no'))
 

@@ -25,7 +25,7 @@ while True: # 메인화면
             avg=total/3
             stu_list.append([no,name,kor,eng,math,total,avg])
             print(name,"학생성적이 등록되었습니다.")
-            print()
+            print() # 빈공백을 만들어 준것
 
     elif choice==2:
         print("[ 학생성적출력 ]")
@@ -35,7 +35,9 @@ while True: # 메인화면
         print("-"*60)
         for s in stu_list:
             print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*s))
-
+            # == print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}"\
+                #        .format(s[0],s[1],s[2],s[3],s[4],s[5],s[6]))
+            
     elif choice==3:
         print ("[ 학생성적수정 ]")
 
