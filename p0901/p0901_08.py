@@ -6,12 +6,75 @@ stu_list=[
     [3,"이순신",80,70,60,210,70.0]
 ]
 
-# 유관순-국어 100,영어 50으로 변경
-stu_list[1][2]=100
-stu_list[1][3]=50
-stu_list[1][5]=stu_list[1][2]+stu_list[1][3]+stu_list[1][4]
-stu_list[1][6]=stu_list[1][5]/3
-print(stu_list)
+while True:
+    name = input("검색이름 입력:")
+    flag = 0 # 초기화
+    for i, stu in enumerate(stu_list):
+
+        if name in stu:
+            stu_index=stu.index(name)
+            print("있음")
+            flag = 1
+            break
+
+    if flag==0:
+        print("해당하는 이름이 없습니다.")
+
+
+
+
+
+
+
+
+# ---------------------------------------------------
+
+
+# name_arr=["홍길동","유관순,","이순신","강감찬","김구"]
+
+# name=input("검색할 이름을 입력하세요.>>")
+# print(name_arr.index(name)) #바로쓰면 리스트에 없는 경우 에러뜸.
+# print(name_arr.find(name)) #문자 find, rfind
+
+
+
+# while True:
+#     name=input("검색할 이름을 입력하세요.>>")
+#     if name in name_arr:
+#         no=name_arr.index(name) #리스트 주소 검색
+#         print(no,":",name,"학생이 검색되었습니다.")
+
+#         change=input("변경할 이름을 입력하세요.>>")
+#         name_arr[no] = change
+#         print(name_arr) #변경된 이름 확인
+
+#     else:
+#         print(name,"학생은 없습니다.")
+
+
+
+
+
+
+
+
+
+
+# ------------------------------------------
+
+
+# stu_list=[
+#     [1,"홍길동",100,90,80,270,90.0],
+#     [2,"유관순",90,80,70,240,80.0],
+#     [3,"이순신",80,70,60,210,70.0]
+# ]
+
+# # 유관순-국어 100,영어 50으로 변경
+# stu_list[1][2]=100
+# stu_list[1][3]=50
+# stu_list[1][5]=stu_list[1][2]+stu_list[1][3]+stu_list[1][4]
+# stu_list[1][6]=stu_list[1][5]/3
+# print(stu_list)
 # [2, '유관순', 100, 50, 70, 220, 73.33333333333333] 로 변경됨.
 
 
