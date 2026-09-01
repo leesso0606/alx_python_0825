@@ -30,7 +30,7 @@ stu_list=[]
 # print(stu_list)
 
 
-
+stu_list=[]
 while True: 
     no=len(stu_list)+1 
     # no=input("번호입력:")
@@ -45,11 +45,12 @@ while True:
     stu_list.append([no,name,kor,eng,math,total,avg])
 
 print("입력한 학생성적:",len(stu_list))
-
 print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
 print("-"*60)
 for s in stu_list:
     print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*s))
+    # == print("{}\t{}\t{}\t{}\t{}\t{}\t{:.2f}"\
+    #        .format(s[0],s[1],s[2],s[3],s[4],s[5],s[6]))
 
 
 
