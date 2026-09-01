@@ -10,9 +10,9 @@ sum1=0
 for i in range(1,101):
     sum1=sum1+i
     if sum1>200:
-       print("200이 넘을 때 i: ",i)
-       print("i번째 합계:",sum1 )
-       break
+        print("200이 넘을 때 i: ",i)
+        print("i번째 합계:",sum1 )
+        break
 
 
 # 200을 넘는 이전 시점의 i와 합계를 출력하시오
