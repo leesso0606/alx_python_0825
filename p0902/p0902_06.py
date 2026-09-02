@@ -1,0 +1,68 @@
+
+# 학생성적
+
+stu=[]
+c_no=1 #학생번호로 사용
+
+
+# 메인화면 출력
+def main_print():
+
+    print(" [ 학생성적 프로그램 ] ")
+    print("-"*60)
+    print("1. 학생성적입력")
+    print("2. 학생성적출력")
+    print("-"*60)
+
+
+#성적입력 함수
+def stu_input():
+        c_no=1 # 학생번호로 사용
+        print()
+    
+        while True:
+            print(" [ 학생성적 입력 ] ")
+            no=c_no
+            name=input("학생이름입력(0.이전페이지 이동):")
+            if name=="0":
+                break
+            kor=int(input("국어점수 입력:"))
+            eng=int(input("영어점수 입력:"))
+            math=int(input("수학점수 입력:"))
+            total=kor+eng+math
+            avg=total/3
+            stu.append({"no":no,"name":name,"kor":kor,"eng":eng,"math":math,"total":total,"avg":avg})
+            print(name,"학생성적이 입력되었습니다.")
+            c_no+=1 #다음번호 1증가
+        print()
+
+
+
+
+
+# 화면출력
+# 1. 성적입력
+# 2. 성적출력
+
+
+
+
+while True:
+    # 메인화면 함수로 호출
+    main_print()
+    choice=int(input("원하는 번호를 입력하세요."))
+    
+    # 학생성적입력부분
+    if choice==1:
+        stu_input() #성적입력 함수
+        
+    # 학생성적 출력
+    elif choice==2:
+        print()
+        print(" [ 학생성적 출력 ] ")
+        print("-"*60)
+        print("번호\t이름\t국어\t영어\t수학\t합계\t평균")
+        print("-"*60)
+        for s in stu:
+            print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']:.2f}")
+        print()

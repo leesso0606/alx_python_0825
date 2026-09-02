@@ -90,7 +90,7 @@ print(name_sort1)
 
 # stu={"no":1,"name":"홍길동","total":100}
 
-# print(stu.keys()) #키값만
+# print(stu.keys()) #모든 키값만
 # print(stu.values()) #value값만
 # print(stu.items()) # 둘다 나온다
 

@@ -39,5 +39,3 @@ print(str1[::2]) #2칸씩 띄어서 출력
 #print(str[10]) #위치에 아무것도 없으니 에러
 
 print(len(str1)) #길이
-
-      
