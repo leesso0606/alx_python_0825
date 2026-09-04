@@ -1,14 +1,14 @@
 
 # isdigit() : 문자열이 숫자인지 확인/ isalpha():문자열이 문자(영어) / isalnum():문자열이 문자 또는 숫자로
-while True:
+# while True:
 
-    a=int(input("숫자를 입력하세요."))
-    if a.isdigit():
-        a=int(a)
-        break
-    else:
-        print("숫자가 아닙니다. 다시 입력하세요.")
-    print(a)
+#     a=int(input("숫자를 입력하세요."))
+#     if a.isdigit():
+#         a=int(a)
+#         break
+#     else:
+#         print("숫자가 아닙니다. 다시 입력하세요.")
+#     print(a)
 
 
 
@@ -26,7 +26,7 @@ while True:
 str = input("날짜를 입력하세요.(2026/09/02)")
 # 2026년9월2일로 작성
 str2=str.split("/")
-print(str2)
+print(str2) # ['2026', '09', '02']
 print("{}년{}월{}일".format(*str2))
 
 
