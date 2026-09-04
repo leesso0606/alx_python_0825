@@ -25,6 +25,7 @@ print(7)
 # # os.mkdir("aabbcc")
 
 # news =open("new.txt","r",encoding="utf-8") #utf-8 한글 인코딩 방식
+# news = open("c:/down/aaa.txt","r",encoding="utf-8")
 # while True:
 #     str=news.readline() #1줄씩 읽어오기.
 #     if str=="": break

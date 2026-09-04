@@ -1,7 +1,7 @@
 # 응용문
 
 alist=list(range(1,26))
-
+print(len(alist))
 alist2=[]
 #리스트 안에 리스트
 for i in range(0,26,5):

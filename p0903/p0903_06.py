@@ -28,21 +28,22 @@ def cal1():
 # >>>>  프로그램 시작
 
 # 상품명 출력
-for i,p in enumerate(s_arr):
-    print(f"{i+1}.{s_arr[i]["prd_name"]}:{s_arr[i]["price"]:,}원")
+while True:
+    for i,p in enumerate(s_arr):
+        print(f"{i+1}.{s_arr[i]["prd_name"]}:{s_arr[i]["price"]:,}원")
 
-# print("1.컴퓨터-1000000")
-# print("2.냉장고")
-# print("3.오디오")
-# print("4.세탁기")
+    # print("1.컴퓨터-1000000")
+    # print("2.냉장고")
+    # print("3.오디오")
+    # print("4.세탁기")
 
 
-choice = int(input("원하는 번호입력 : "))
-if choice == 1:
-    cal1()
-elif choice == 2:
-    cal1()
-elif choice == 3:
-    cal1()
-elif choice == 4:
-    cal1()
+    choice = int(input("원하는 번호입력 : "))
+    if choice == 1:
+        cal1()
+    elif choice == 2:
+        cal1()
+    elif choice == 3:
+        cal1()
+    elif choice == 4:
+        cal1()
