@@ -10,17 +10,17 @@ def readStu():
     global stuNum
     with open("c:/aaa/stu.txt","r",encoding="utf-8") as f:
         while True: #여러 정보가 있으니 반복해서 진행하라
-            data=f.readline().strip() #한줄씩, 앞뒤 공백을 제거해줘?
+            data=f.readline() 
             if data=="":
                 break
             stu=data.split(",")
             for i,s in enumerate(stu):
                 if 2<=i<=5:
-                    stu[i]=int(s)
+                    stu[i]=int(s.strip())
                 elif i==6:
-                    stu[i]=float(s)
+                    stu[i]=float(s.strip())
                 elif i==7:
-                    stu[i]=int(s)
+                    stu[i]=int(s.strip())
                 else: continue
             stuList.append(dict(zip(s_title,stu)))
             stuNum=len(stuList)+1
