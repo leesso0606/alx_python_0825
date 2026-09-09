@@ -99,7 +99,7 @@ def s_update():
             temp=1
             break
     if temp==0:
-        print(f"{name}학생이 없습니다.")
+        print(f"{i+1}.{name}학생이 없습니다.")
     elif temp==1:
         print("[ 과목 수정 선택 ]")
         print("1.국어  2.영어  3.수학")
