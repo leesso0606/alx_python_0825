@@ -1,5 +1,8 @@
 
-
+stuList = []
+title = ["번호","이름","국어","영어","수학","합계","평균","등수"]
+s_title = ["no","name","kor","eng","math","total","avg","rank"]
+stuNum = 1  #전역변수
 
 from stufunc import *
 from students import*

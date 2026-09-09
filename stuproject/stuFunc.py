@@ -2,7 +2,8 @@
 from student import Student
 from students import Students
 
-# Students객체선언
+# Students():객체선언
+# stus:참조변수(주소값이 있으면 다 참조변수다)
 stus=Students()
 
 stuNum=1 #전역변수
