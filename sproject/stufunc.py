@@ -1,8 +1,16 @@
 stuList = []
 title = ["번호","이름","국어","영어","수학","합계","평균","등수"]
 s_title = ["no","name","kor","eng","math","total","avg","rank"]
-stuNum = 1  #전역변수
 
+
+# 클래스 사용하기
+from student import Student
+from students import Students
+
+# 객체선언
+stus=Students()
+
+stuNum = 1  #전역변수
 
 #  저장된 파일 불러오기
 def readStu():
@@ -22,8 +30,11 @@ def readStu():
                     data1[i]=float(s.strip())
                 elif i==7:
                     data1[i]=int(s.strip())
-            stuList.append(dict(zip(s_title,data1)))
-            stuNum=len(stuList)+1
+            stus.add(Student(data1[0],data1[1],data1[2],data1[3],data1[4],data1[5],data1[6],data1[7]))
+            stuNum=len(stus.slist)+1
+            
+            # stuList.append(dict(zip(s_title,data1)))
+            # stuNum=len(stuList)+1
 
 
 
@@ -57,27 +68,31 @@ def stu_input():
         avg=total/3
         rank=0
 
-        stuList.append({'no':no,'name':name,'kor':kor,'eng':eng,'math':math,'total':total,'avg':avg,'rank':rank})
+        #Student 객체를 생성하고, 그 객체를 stus 객체의 slist 리스트에 추가한다.
+        stus.add(Student(no,name,kor,eng,math))
+        # stuList.append({'no':no,'name':name,'kor':kor,'eng':eng,'math':math,'total':total,'avg':avg,'rank':rank})
         print(f"{stuNum}.{name}학생성적이 저장되었습니다.")
         stuNum+=1
         print()
 
 # 2. 학생성적 출력
 def stu_output():
-    print()
-    print("[학생성적 출력]")
-    print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t".format(*title))
-    print("-"*60)
-    for s in stuList:
-        print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']:.2f}\t{s['rank']}")
-    print()
+    stus.print()
+    # print()
+    # print("[학생성적 출력]")
+    # print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t".format(*title))
+    # print("-"*60)
+    # for s in stuList:
+    #     print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']:.2f}\t{s['rank']}")
+    # print()
+
 # 3. 학생성적 수정
 def stu_updata():
     print("[학생성적수정]")
     name=input("학생이름 검색:")
     temp=0
-    for s in stuList:
-        if s['name']==name:
+    for s in stus.slist:
+        if s.name==name:
             temp=1
             print(f"{name}학생이 검색되었습니다.")
             print("[수정과목]")
@@ -87,33 +102,36 @@ def stu_updata():
                 break
             elif choice==1:
                 print("[국어점수 수정]")
-                print(f"현재국어점수 :{s['kor']}")
-                s['kor']=int(input("변경점수입력:"))
-                s['total']=s['kor']+s['eng']+s['math']
-                s['avg']=s['total']/3
+                print("현재국어점수 :",s.kor)
+                s.kor=int(input("변경점수입력:"))
+                
             elif choice==2:
                 print("[영어점수 수정]")
-                print(f"현재영어점수 :{s['eng']}")
-                s['eng']=int(input("변경점수입력:"))
-                s['total']=s['kor']+s['eng']+s['math']
-                s['avg']=s['total']/3
+                print("현재영어점수 :",s.eng)
+                s.eng=int(input("변경점수입력:"))
+                
             elif choice==3:
-                print("[국어수학 수정]")
-                print(f"현재수학점수 :{s['math']}")
-                s['math']=int(input("변경점수입력:"))
-                s['total']=s['kor']+s['eng']+s['math']
-                s['avg']=s['total']/3
+                print("[수학점수 수정]")
+                print("현재수학점수 :",s.math)
+                s.math=int(input("변경점수입력:"))
+            s.s_total()
+            s.s_avg()
+
+                
             print("수정이 완료되었습니다.")
             
     # 바깥으로 안빼면 없다고도 출력됨
     if temp==0:
         print(f"{name}학생이 없습니다.")
+
 # 8. 학생 등수
 
 # 9. 학생성적 저장
 def writeStu():
     with open("c:/aaa/stu.txt","w",encoding="utf-8") as f:
-        for s in stuList:
-            data=(f"{s['no']},{s['name']},{s['kor']},{s['eng']},{s['math']},{s['total']},{s['avg']:.2f},{s['rank']}")
+        for s in stus.slist: #stus 객체안 slist를 가져와라->그걸 s라는 변수를 이용하여 분리한다.
+            data=s.s_data()
+            # (f"{s['no']},{s['name']},{s['kor']},{s['eng']},{s['math']},{s['total']},{s['avg']:.2f},{s['rank']}")
+            print(data)
             f.write(data+"\n")
         print("성적파일이 저장되었습니다.")

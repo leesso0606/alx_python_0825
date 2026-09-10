@@ -5,8 +5,7 @@ s_title = ["no","name","kor","eng","math","total","avg","rank"]
 stuNum = 1  #전역변수
 
 from stufunc import *
-from students import*
-from student import*
+
 
 readStu() # 파일불러오기
 

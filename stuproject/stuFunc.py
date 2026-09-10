@@ -34,10 +34,14 @@ def readStu():
             # Student(1."홍길동",100,100,100) 한것과 같다.
             # 클래스 추가
             # 객체 선언 후 Students리스트에 추가
+            # stu리스트의 데이터를 이용하여 Student()객체를 만든다음 stus의 slist에 추가한다
+            # stu:파일 데이터 / Student(): 데이터를 이용해 만든 학생 객체/ stus.add(): 학생객체를 slist에 넣기
+            # 객체.함수명()으로 사용.->.append()와 같은방법.
             stus.add(Student(stu[0],stu[1],stu[2],stu[3],stu[4],stu[5],stu[6],stu[7]))
 
             # 번호추가부분
             stuNum=len(stus.slist)+1
+            # # stus.slist는 실제 학생 리스트
 
             # -------------클래스로 바꾸고 삭제예정
             # stuList.append(dict(zip(s_title,stu)))
@@ -157,6 +161,8 @@ def stu_updata():
                 s.math=int(input("변경점수입력:"))
                 
             # 공통인 값 밖으로 빼서 한번에 사용하기
+            # 클래스 안에 정의된 함수이기 때문
+            # s라는 학생 객체의 평균 계산 기능을 실행해라
             s.s_total()
             s.s_avg()
             print("수정이 완료되었습니다.")
