@@ -80,7 +80,7 @@ def stu_output():
     stus.print()
     # print()
     # print("[학생성적 출력]")
-    # print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t".format(*title))
+    # print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(*title))
     # print("-"*60)
     # for s in stuList:
     #     print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']:.2f}\t{s['rank']}")
