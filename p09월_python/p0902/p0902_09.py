@@ -1,6 +1,6 @@
 #  
 import random
-from gugudan import*
+from p09월_python.p0902.gugudan import*
 # form gugudan import gugudan_func
 
 def main():

@@ -1,4 +1,4 @@
-from stuFunc import*
+from p09월_python.p0915.stuFunc import*
 
 # 파일 불러오기
 readlist()

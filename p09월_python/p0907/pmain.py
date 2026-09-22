@@ -1,5 +1,5 @@
 
-from pfunc import *
+from p09월_python.p0907.pfunc import *
 # 정보
 
 stuList = []

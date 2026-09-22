@@ -5,7 +5,7 @@
 # s_title = ["no","name","kor","eng","math","total","avg","rank"]
 
 
-from stuFunc import*
+from p09월_python.p0911.stuFunc import*
 
 sno=1
 #  파일 불러오기

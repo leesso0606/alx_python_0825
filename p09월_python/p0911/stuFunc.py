@@ -3,8 +3,8 @@
 # title=["번호","이름","국어","수학","영어","합계","평균","등수"]
 # s_title = ["no","name","kor","eng","math","total","avg","rank"]
 
-from student import Student
-from students import Students
+from p09월_python.p0911.student import Student
+from p09월_python.p0911.students import Students
 
 stus=Students()
 sno=1

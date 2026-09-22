@@ -5,7 +5,7 @@
 # 3. 
 
 #  func파일과 연결됨.
-from func import*
+from p09월_python.p0902.func import*
 
 # 시작위치----->
 while True:

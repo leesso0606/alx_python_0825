@@ -2,8 +2,8 @@
 
 # 모듈 가져오기.
 
-from func import cal1,cal2,cal3 #함수 하나씩 지정하여 오픈할 수 있음.
-from func import* #저장된 함수 모두를 가져옴.
+from p09월_python.p0903.func import cal1,cal2,cal3 #함수 하나씩 지정하여 오픈할 수 있음.
+from p09월_python.p0903.func import* #저장된 함수 모두를 가져옴.
 cal1()
 cal2()
 cal3()

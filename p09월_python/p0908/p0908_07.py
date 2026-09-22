@@ -1,8 +1,8 @@
 
 # 다른 폴더 안에 있는 파일 경우: from으로 import해야함
 # from 폴더명 import 파일명
-from project import students
-from project import student
+from p09월_python.p0908.project import students
+from p09월_python.p0908.project import student
 
 #  파일명.class명()
 

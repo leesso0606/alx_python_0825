@@ -4,8 +4,8 @@ s_title = ["no","name","kor","eng","math","total","avg","rank"]
 
 
 # 클래스 사용하기
-from student import Student
-from students import Students
+from p09월_python.sproject.student import Student
+from p09월_python.sproject.students import Students
 
 # 객체선언
 stus=Students()

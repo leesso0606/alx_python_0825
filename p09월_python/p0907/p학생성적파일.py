@@ -1,8 +1,8 @@
 
 
-import p_stu_m
-import p_stu_m as pm
-from p_stu_m import main_screen,stu_input,stu_output,readStu,writeStu
+import p09월_python.p0907.p_stu_m as p_stu_m
+import p09월_python.p0907.p_stu_m as pm
+from p09월_python.p0907.p_stu_m import main_screen,stu_input,stu_output,readStu,writeStu
 # from p_stu_m import* # 모든 함수 불러오기
 
 

@@ -1,7 +1,7 @@
 
 
 
-from stuFunc import *
+from p09월_python.stuproject.stuFunc import *
 
 
 readStu() # 파일불러오기

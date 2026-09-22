@@ -1,10 +1,10 @@
-import func #파일(모듈)불러오기
+import p09월_python.p0907.func as func #파일(모듈)불러오기
 # func.함수명 : 파일명 안에 있는 함수를 불러와라
 
-import func as fn
+import p09월_python.p0907.func as fn
 # fn.함수명
 
-from func import hap1,hap2,hap3
+from p09월_python.p0907.func import hap1,hap2,hap3
 #  함수명만 사용하면됨, 저 파일안 특정 함수만 끌어오는 것.
 
 

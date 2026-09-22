@@ -1,6 +1,6 @@
 
-from student import Student
-from students import Students
+from p09월_python.stuproject.student import Student
+from p09월_python.stuproject.students import Students
 
 # Students():객체선언
 # stus:참조변수(주소값이 있으면 다 참조변수다)
