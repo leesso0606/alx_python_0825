@@ -30,9 +30,11 @@ naver_pw=os.getenv('naver_pw')
 # browser.find_element(By.XPATH,'//*[@id="pw"]').click()
 # browser.find_element(By.XPATH,'//*[@id="pw"]').send_keys('1111')
 
+# ① JavaScript 코드 만들기
 input_js='document.getElementById("id").value="{id}";\
         document.getElementById("pw").value="{pw}";\
         '.format(id=naver_id,pw=naver_pw)
+# ② 만든 JavaScript 실행하기:브라우저에서 자바스크립트 실행하기
 browser.execute_script(input_js)
 time.sleep(3)
 browser.find_element(By.XPATH,'//*[@id="loginBtn_row"]').click()
